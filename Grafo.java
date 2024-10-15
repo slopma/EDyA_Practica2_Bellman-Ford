@@ -31,7 +31,7 @@ public class Grafo {
         for (int i = 0; i < numNodos; i++) {
             for (int j = 0; j < numNodos; j++) {
                 if (i != j && rand.nextBoolean()) {
-                    int peso = rand.nextInt(11) - 5;  // pesos
+                    int peso = rand.nextInt(11) - 5;  // pesos aceptando negativos
                     grafo.agregarArista(i, j, peso);
                 }
             }
